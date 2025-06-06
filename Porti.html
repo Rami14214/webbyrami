@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header data-aos="flip-left">
+      <div class="hero">
+        <div class="menu">
+          <h1 class="logo">Motion By Rami.</h1>
+          <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+          <div class="links" id="nav-links">
+            <a class="link active" href="#">Home</a>
+            <a class="link" href="#">Services</a>
+            <a class="link" href="#">Prices</a>
+            <a class="link" href="#">Contact</a>
+          </div>
+        </div>
+
+        <div class="box-container hero-boxes">
+          <div class="box blue"></div>
+          <div class="box purple"></div>
+          <div class="text video-editing">VIDEO EDITING</div>
+          <div class="text and-symbol">&</div>
+          <div class="text web-development">WEB DEVELOPMENT</div>
+        </div>
+        <div class="caption">EDIT. CODE. DOMINATE.</div>
+      </div>
+    </header>
+
+    <div class="services" data-aos="fade-up">
+      <div class="wrapper">
+        <div class="box-container services-boxes">
+          <div class="box blue"></div>
+          <div class="box purple"></div>
+        </div>
+      </div>  
+      <div class="video-editing">
+        <h2>Video Editing</h2>
+        <div class="element1">
+          <i class="fa-solid fa-i-cursor"></i>
+          <h3>Cutting Videos</h3>
+        </div>
+        <div class="element2">
+          <i class="fa-solid fa-headphones"></i>
+          <h3>Sound Design</h3>
+        </div>
+        <div class="element3">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Motion Graphics</h3>
+        </div>
+        <div class="element4">
+          <i class="fa-solid fa-clock"></i>
+          <h3>Fast Delivery</h3>
+        </div>
+      </div>
+      <div class="web-development">
+        <h2>Web Development</h2>
+        <div class="element1">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Responsive Design</h3>
+        </div>
+        <div class="element2">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Costume Colors</h3>
+        </div>
+        <div class="element3">
+          <i class="fa-solid fa-user"></i>
+          <h3>User Friendly</h3>
+        </div>
+        <div class="element4">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <h3>Costume Prices</h3>
+        </div>
+      </div>
+    </div>
+
+   <section id="portfolio" class="portfolio-section" data-aos="slide-right">
+  <h2 class="section-title">Portfolio</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="video">Videos</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+  </div>
+
+  <div class="portfolio-grid">
+    <!-- Video thumbnails -->
+    <div class="portfolio-item" data-category="video">
+      <video controls src="videos/final1.mp4"></video>
+    </div>
+    <div class="portfolio-item" data-category="video">
+      <video controls src="videos/final2.mp4"></video>
+    </div>
+    <div class="portfolio-item" data-category="video">
+      <video controls src="videos/final3.mp4"></video>
+    </div>
+    <div class="portfolio-item" data-category="video">
+      <video controls src="videos/final4.mp4"></video>
+    </div>
+    <!-- Repeat up to 11 videos -->
+
+    <!-- Web/image thumbnails -->
+    <div class="portfolio-item" data-category="web">
+      <img src="photos/photo1.png" alt="Web Project 1" />
+    </div>
+    <div class="portfolio-item" data-category="web">
+      <img src="photos/photo2.png" alt="Web Project 2" />
+    </div>
+    <div class="portfolio-item" data-category="web">
+      <img src="photos/photo3.png" alt="Web Project 2" />
+    </div>
+    <div class="portfolio-item" data-category="web">
+      <img src="photos/photo4.png" alt="Web Project 2" />
+    </div>
+    <!-- Repeat up to 5 images -->
+  </div>
+</section>
+
+
+<section id="about" class="about-section" data-aos="fade-up">
+  <h2 class="section-title">Meet Our Team</h2>
+
+  <div class="team-grid">
+    <div class="team-member">
+      <svg viewBox="0 0 200 200" class="blob">
+        <mask id="mask1">
+          <i class="fa-solid fa-user"></i>
+        </mask>
+        <path fill="#fff" d="M40,-60C55,-53,68,-42,73,-28C78,-15,74,0,67,14C59,29,47,41,34,53C21,66,6,79,-10,82C-26,86,-52,80,-66,64C-80,47,-83,20,-75,0C-67,-19,-47,-37,-30,-46C-13,-55,3,-55,20,-60C36,-65,55,-67,40,-60Z" transform="translate(100 100)" mask="url(#mask1)" />
+      </svg>
+      <h3>Rami Fayad</h3>
+      <p class="role">Web Developer</p>
+    </div>
+
+    <div class="team-member">
+      <svg viewBox="0 0 200 200" class="blob">
+        <mask id="mask2">
+          <i class="fa-solid fa-user"></i>
+        </mask>
+        <path fill="#fff" d="M35,-60C48,-55,60,-42,66,-26C71,-10,70,8,61,22C52,36,35,46,19,54C3,62,-11,68,-27,66C-43,64,-60,54,-64,40C-69,26,-61,8,-55,-9C-48,-26,-43,-42,-31,-52C-20,-62,-10,-66,5,-68C20,-70,40,-64,35,-60Z" transform="translate(100 100)" mask="url(#mask2)" />
+      </svg>
+      <h3>Karim Zain</h3>
+      <p class="role">Video Editor</p>
+    </div>
+
+    <div class="team-member">
+      <svg viewBox="0 0 200 200" class="blob">
+        <mask id="mask3">
+          <i class="fa-solid fa-user"></i>
+        </mask>
+        <path fill="#fff" d="M50,-70C66,-63,78,-47,82,-30C86,-13,82,4,74,18C66,33,54,45,40,56C26,67,9,76,-8,79C-25,82,-50,80,-63,65C-76,51,-76,25,-67,6C-58,-13,-39,-25,-24,-38C-10,-51,2,-66,18,-71C34,-77,50,-77,50,-70Z" transform="translate(100 100)" mask="url(#mask3)" />
+      </svg>
+      <h3>Jad Khoder</h3>
+      <p class="role">UX Designer</p>
+    </div>
+
+    <div class="team-member">
+      <svg viewBox="0 0 200 200" class="blob">
+        <mask id="mask4">
+          <i class="fa-solid fa-user"></i>
+        </mask>
+        <path fill="#fff" d="M45,-60C57,-52,65,-40,67,-26C69,-12,64,3,59,20C54,36,47,53,35,60C24,68,8,66,-7,66C-23,66,-45,67,-56,57C-67,47,-67,25,-62,6C-56,-12,-46,-27,-34,-41C-22,-55,-11,-67,2,-68C15,-70,30,-68,45,-60Z" transform="translate(100 100)" mask="url(#mask4)" />
+      </svg>
+      <h3>Jana Alam</h3>
+      <p class="role">Animator</p>
+    </div>
+  </div>
+</section>
+
+<section class="review-section" data-aos="slide-right">
+  <div class="review-slider">
+    <button class="prev-review">←</button>
+
+    <div class="review-card">
+      <img class="user-icon" src="photos/user/user.png" alt="User">
+      <div class="review-content">
+        <div class="user-name">Sarah K.</div>
+        <div class="star-rating"></div>
+        <p class="review-text">Absolutely loved the experience. Highly recommend!</p>
+      </div>
+    </div>
+
+    <button class="next-review">→</button>
+  </div>
+</section>
+
+<section id="contact" class="contact-section" data-aos="fade-up">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xkgbgerv" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  </body>
+</html>
